@@ -1,5 +1,5 @@
 	<nav class="navbar navbar-inverse navbar-static-top">
-		<div class="container"><!-- Container is centered in page -->
+		<div class="container col-md-6 col-md-offset-4"><!-- Container is centered in page -->
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -10,7 +10,9 @@
 				</button>
 				<a href="{linkto page="index.php"}" class="navbar-brand"><img src="{$mainLogo}" id="mainLogo" class="img-responsive" style="margin-top: -6px;"></a>
 			</div>
-			<div class="collapse navbar-collapse">
+		</div>
+		<div class="container col-md-8 col-md-offset-2">
+			<div class="collapse navbar-collapse color-red">
 				<ul class="nav navbar-nav topNav">
 
 					<li id="navHome"><a href="{linkto page="index.php"}">Home</a></li>
@@ -41,51 +43,19 @@
 						{/if}
 					{/if}
 
-					{if $cartStatus}			
-						<div class="nav navbar-right">
-							<div id="headerCartBox">
-								<div id="cartPreviewContainer">
-									<div id="miniCartContainer"></div>
-									<div style="float: left; position: relative;" class="viewCartLink"><p id="cartItemsCount">{$cartTotals.itemsInCart}</p><a href="{linkto page="cart.php"}"><img src="{$imgPath}/cart.icon.png" alt="{$lang.cart}"></a></div>
-									<div style="float: left; display:{if $cartTotals.priceSubTotal or $cartTotals.creditsSubTotalPreview}block{else}none{/if};" id="cartPreview">
-										<a href="{linkto page="cart.php"}" class="viewCartLink">
-										<span id="cartPreviewPrice" style="{if !$currencySystem}display: none;{/if}">{$cartTotals.priceSubTotalPreview.display}</span><!-- with tax {$cartTotals.totalLocal.display}-->
-										{if $creditSystem and $currencySystem} + {/if}
-										<span id="cartPreviewCredits" style="{if !$creditSystem}display: none;{/if}">{$cartTotals.creditsSubTotalPreview} </span> {if $creditSystem}{$lang.credits}{/if}
-										</a>
-									</div>
+					{if $cartStatus}							
+							<div id="cartPreviewContainer">
+								<div id="miniCartContainer"></div>
+								<div style="float: left; position: relative;" class="viewCartLink"><p id="cartItemsCount">{$cartTotals.itemsInCart}</p><a href="{linkto page="cart.php"}"><img src="{$imgPath}/cart.icon.png" alt="{$lang.cart}"></a></div>
+								<div style="float: left; display:{if $cartTotals.priceSubTotal or $cartTotals.creditsSubTotalPreview}block{else}none{/if};" id="cartPreview">
+									<a href="{linkto page="cart.php"}" class="viewCartLink">
+									<span id="cartPreviewPrice" style="{if !$currencySystem}display: none;{/if}">{$cartTotals.priceSubTotalPreview.display}</span><!-- with tax {$cartTotals.totalLocal.display}-->
+									{if $creditSystem and $currencySystem} + {/if}
+									<span id="cartPreviewCredits" style="{if !$creditSystem}display: none;{/if}">{$cartTotals.creditsSubTotalPreview} </span> {if $creditSystem}{$lang.credits}{/if}
+									</a>
 								</div>
 							</div>
-						</div>
 					{/if}
-
-					{if $smarty.server.REQUEST_URI == '/gallery.php?mode=gallery'}
-					<div class="nav navbar-right col-md-3">
-						<form role="search" action="{linkto page="search.php"}" method="get" id="searchFormTest" class="navbar-form">			
-						<input type="hidden" name="clearSearch" value="true">
-							<div class="input-group">					
-								<input type="text" class="form-control" placeholder="{$lang.enterKeywords}" name="searchPhrase" id="searchPhrase">
-								<div class="input-group-btn">
-									<button class="btn btn-info">
-										<span class="glyphicon glyphicon-search"></span>
-									</button>
-								</div>					
-							</div>
-							<div style="margin-top: 6px;">
-								{if $currentGallery.gallery_id}<input type="checkbox" name="galleries" id="searchCurrentGallery" value="{$currentGallery.gallery_id}" checked="checked"><label for="searchCurrentGallery">{$lang.curGalleryOnly}</label>&nbsp;&nbsp;{/if}
-								<!--<a href="{linkto page='search.php'}">{$lang.advancedSearch}</a>-->
-								{* Event Search Link *}
-								{if $config.settings.esearch}
-									<a href="{linkto page="esearch.php"}">{$lang.eventSearch}</a>
-								{/if}
-							</div>
-						</form>		
-					</div>
-
-					
-					{/if}
-
-
 
 					
 					{if $featuredTab}
@@ -116,3 +86,4 @@
 			</div>
 		</div>
 	</nav>
+	
