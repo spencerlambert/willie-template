@@ -24,19 +24,21 @@
 					{if $config.settings.papage}<li><a href="{linkto page='purchase.agreement.php'}">{$lang.purchaseAgreement}</a></li>{/if}
 				</ul>
 			-->
-			<div class="col-md-3"></div>
-			<div class="col-md-6" style="text-align: center;">
+			<div class="col-md-2"></div>
+			<div class="col-md-10">
 				
 				{if $config.settings.facebook_link}<a href="{$config.settings.facebook_link}" target="_blank"><img src="{$imgPath}/facebook.icon.png" width="20" title="Facebook"></a>{/if}&nbsp;{if $config.settings.twitter_link}<a href="{$config.settings.twitter_link}" target="_blank"><img src="{$imgPath}/twitter.icon.png" width="20" title="Twitter"></a>{/if}
-				{if $config.settings.contact}<a href="{linkto page="contact.php"}"> Contact Info |</a>{/if}
-				<span style="color:white;"> All Rights Reserved &copy; |</span>
+				<a href="http://www.willieholdman.com/">| WILLIEHOLDMAN.COM |</a>
+				{if $config.settings.contact}<a href="{linkto page="contact.php"}"> CONTACT INFO |</a>{/if}
+				<a href="#"> ALL RIGHTS RESERVED &copy; |</a>
 			<!--
 				{$lang.copyright} <a href="{$baseURL}">{$config.settings.business_name}</a><br>{$lang.reserved}
 			-->
 				{if $config.settings.tospage}<a href="{linkto page='terms.of.use.php'}"> {$lang.termsOfUse} |</a>{/if}
-				{if $config.settings.pppage}<a href="{linkto page='privacy.policy.php'}"> {$lang.privacyPolicy}</a>{/if}
+				{if $config.settings.pppage}<a href="{linkto page='privacy.policy.php'}"> {$lang.privacyPolicy} |</a>|{/if}
+				<a href="#"> SITE MAP </a>
 			</div>
-			<div class="col-md-3"></div>
+			<div class="col-md-2"></div>
 
 
 		</div>

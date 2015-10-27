@@ -2355,7 +2355,7 @@ ul.purchaseListDescription li strong{
 	white-space: nowrap;
 	float: right;
 	position: relative;		
-	padding: 10px 10px 10px 10px;
+	padding: 14px 15px 13px 25px;
 	margin-top: 6px;
 	-moz-border-radius-topright:4px; 
 	-moz-border-radius-topleft:4px;
@@ -2363,7 +2363,9 @@ ul.purchaseListDescription li strong{
 	-webkit-border-top-left-radius:4px;
 	border-top-left-radius:4px;
 	border-top-right-radius:4px;
-	cursor: pointer;}
+	cursor: pointer;
+	border-left: 1px solid #eaeaea;
+}
 
 .cartPreviewContainerOn{
 	background-color: #000000;
@@ -3565,21 +3567,4 @@ input.updateQuantitiesButton[type="button"]{
 
 .mediaContainer .FotomotoToolbarClass{
 	margin-left: 4px !important;	
-}
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-}
-.color-red{
-	background-color: rgb(163, 26, 26);
-	border-radius: 10px;
-	font-size: 15px;
-
-.topPad{
-	top: -35px;
 }
