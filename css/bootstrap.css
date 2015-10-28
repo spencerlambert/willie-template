@@ -348,6 +348,8 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
+  margin:0 auto !important;	
+
 }
 
 .img-rounded {
@@ -1068,6 +1070,17 @@ pre code {
 }
 
 @media (min-width: 992px) {
+		.navbar-form {
+  padding: 0px 0px 0px 15px !important;
+  margin-top: 8px;
+  margin-right: -15px;
+  margin-bottom: 8px;
+  margin-left: -15px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+}
   .container {
     max-width: 970px;
   }
@@ -1231,6 +1244,17 @@ pre code {
 }
 
 @media (min-width: 1200px) {
+	.navbar-form {
+  padding: 0px 0px 0px 15px !important;
+  margin-top: 8px;
+  margin-right: -15px;
+  margin-bottom: 8px;
+  margin-left: -15px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+}
   .container {
     max-width: 1170px;
   }
@@ -4181,7 +4205,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-brand {
-  float: left;
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
@@ -4238,6 +4261,18 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 @media (max-width: 767px) {
+			.navbar-form {
+  padding: 0px 15px 0px 15px !important;
+  margin-top: 8px;
+  margin-right: -15px;
+  margin-bottom: 8px;
+  margin-left: -15px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+	
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;

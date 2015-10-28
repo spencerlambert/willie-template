@@ -1,6 +1,7 @@
 	<nav class="navbar navbar-inverse navbar-static-top">
-    <div class="col-md-3"></div>
-		<div class="container col-md-6"><!-- Container is centered in page -->
+    <div class="container">
+    <div class="col-md-2"></div>
+		<div class="container col-md-7"><!-- Container is centered in page -->
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -11,7 +12,28 @@
 				</button>
 				<a href="{linkto page="index.php"}" class="navbar-brand"><img src="{$mainLogo}" id="mainLogo" class="img-responsive center-block" style="margin-top: -6px;"></a>
 			</div>
-		</div><div class="col-md-3"></div>
+		</div>
+        <div class="search col-md-3">
+					<form  role="search" action="{linkto page="search.php"}" method="get" id="searchFormTest" class="navbar-form">			
+					<input type="hidden" name="clearSearch" value="true">
+						<div class="input-group">					
+							<input type="text" class="form-control" placeholder="{$lang.enterKeywords}" name="searchPhrase" id="searchPhrase">
+							<div class="input-group-btn">
+								<button class="btn btn-info">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</div>					
+						</div>
+						<div style="margin-top: 6px;">
+							{if $currentGallery.gallery_id}<input type="checkbox" name="galleries" id="searchCurrentGallery" value="{$currentGallery.gallery_id}" checked="checked"><label for="searchCurrentGallery">{$lang.curGalleryOnly}</label>&nbsp;&nbsp;{/if}
+							<!--<a href="{linkto page='search.php'}">{$lang.advancedSearch}</a>-->
+							{* Event Search Link *}
+							{if $config.settings.esearch}
+								<a href="{linkto page="esearch.php"}">{$lang.eventSearch}</a>
+							{/if}
+						</div>
+					</form>		
+				</div>	
 		<div class="container col-md-8 col-md-offset-2">
 			<div class="collapse navbar-collapse color-red">
 				<ul class="nav navbar-nav topNav">
@@ -85,5 +107,6 @@
 				</ul>
 			</div>
 		</div>
+        </div>
 	</nav>
 	

@@ -3578,8 +3578,25 @@ input.updateQuantitiesButton[type="button"]{
 .color-red{
 	background-color: rgb(163, 26, 26);
 	border-radius: 10px;
-	font-size: 15px;
+	font-size: 15px;}
 
 .topPad{
 	top: -35px;
+}
+.navbar-brand{
+    margin-top:20px !important;	
+}
+.search.col-md-3{
+	margin-top:23px !important;
+	padding-right: 0px !important;
+}
+.navbar-header{
+	float:none !important;
+}
+.nav.navbar-right.col-md-3{
+    margin-top:15px !important;	
+}
+.navbar-collapse.color-red.in{
+	height: auto !important;
+    overflow-y: hidden !important;
 }
