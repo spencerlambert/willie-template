@@ -11,9 +11,8 @@
 		{include file='header2.tpl'}		
 		
 		<div class="container">
-			<div class="row">
-				{include file='subnav.tpl'}		
-				<div class="col-md-4">
+			<div class="row">	
+				<div class="col-md-5">
 					
 					<div class="divTableCell contentRightColumn">
 						<div class="content">
@@ -40,10 +39,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-1 hidden-xs" style="text-align: center; font-size: 9px; color: #EEE">
+				<div class="col-md-2 hidden-xs" style="text-align: center; font-size: 9px; color: #EEE">
 					|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br><span style="font-weight: bold; font-size: 16px; color: #999">OR</span><br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-5">
 					<h1>{$lang.createAccount}</h1>
 					<hr>					
 					<a href="create.account.php?jumpTo=members" class="btn btn-xs btn-primary" style="font-size: 16px;">&nbsp;{$lang.createAccount}&nbsp;</a>

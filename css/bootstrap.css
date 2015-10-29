@@ -600,6 +600,9 @@ dd {
 }
 
 @media (min-width: 768px) {
+	.col-md-3 p{
+		padding-top:10px;
+	}
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -1070,6 +1073,9 @@ pre code {
 }
 
 @media (min-width: 992px) {
+		.col-md-3 p{
+		padding-top:10px;
+	}
 		.navbar-form {
   padding: 0px 0px 0px 15px !important;
   margin-top: 8px;
@@ -1244,6 +1250,10 @@ pre code {
 }
 
 @media (min-width: 1200px) {
+		.col-md-3 p{
+		padding-top:27px;
+		float:right;
+	}
 	.navbar-form {
   padding: 0px 0px 0px 15px !important;
   margin-top: 8px;
@@ -4261,6 +4271,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 @media (max-width: 767px) {
+			.col-md-3 p{
+		padding-top:5px;
+	}
 			.navbar-form {
   padding: 0px 15px 0px 15px !important;
   margin-top: 8px;

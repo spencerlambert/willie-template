@@ -14,9 +14,8 @@
 				{if $loggedIn}
 					{include file='memnav.tpl'}
 				{else}
-					{include file='subnav.tpl'}
 				{/if}	
-				<div class="col-md-9">
+				<div class="col-md-12">
 					
 					<h1>{$lang.lightboxes}</h1>
 					<hr>
