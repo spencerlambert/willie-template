@@ -23,6 +23,10 @@
 							</div>
 							
 							<div class="col-md-3">
+                            <div class="abt-photo"><img class="img-responsive" src="../assets/images/about-bio-photo.jpg"></div>
+                            <div class="fb-follow"><a href="https://www.facebook.com/willieholdmanphotographs" target="_blank"><img class="img-responsive" src="../assets/images/facebookfollow.png"></a></div>
+                            <div class="galler-view"><a href="../gallery.php"><img class="img-responsive" src="../assets/images/viewgallerylink.png"></a></div>
+                            <div class="prc-faq"><a href="#"><img class="img-responsive" src="../assets/images/viewpricing.png"></div></a>
 								<p>
 									<strong>{$config.settings.business_name}</strong><br>
 									{$config.settings.business_address}<br>
