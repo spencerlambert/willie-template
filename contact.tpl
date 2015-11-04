@@ -15,7 +15,7 @@
 					
 				<div class="col-md-12">
 					
-					<h1>{$lang.contactUs}</h1>
+					<h1 class="color:#FFF !important;">{$lang.contactUs}</h1>
 					<hr>
 					
 					<div class="container" style="padding: 0;">

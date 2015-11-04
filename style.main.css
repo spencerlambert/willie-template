@@ -30,6 +30,7 @@ ol, ul{
 h1{
 	font-size: 28px;
 	font-weight: bold;
+	color:#FFF !important;
 }
 
 h2{
@@ -75,6 +76,12 @@ input[type="checkbox"],input[type="radio"]{
 	
 input[type="text"], input[type="password"], select, textarea{
 	padding: 6px 10px;
+}
+.bimg-main{
+	text-align:center;
+}
+.bimgs{
+	margin-top:30px;
 }
 
 /*
