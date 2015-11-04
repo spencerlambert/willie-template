@@ -64,9 +64,9 @@ http://www.sitepoint.com/understanding-twitter-bootstrap-3/
                             <div class="col-md-12 gallery-split"><a href="http://www.willieholdman.com/products/Utah-landscape-park-city-photo-gallery.asp"><img class="img-responsive" src="../assets/images/gallery-split-2.jpg"></a></div>
                             <div class="clearfix"></div>
                             <div class="bimgs">
-                            <div class="col-lg-4 bimg-main"><a href="http://www.willieholdman.com/products/Landscape-Greeting-Cards.asp"><img class="img-responsive" src="../assets/images/gift-card.png"></a></div>
-                            <div class="col-lg-4 bimg-main"><a href="http://www.willieholdman.com/products/Landscape-Photography-Books.asp"><img class="img-responsive" src="../assets/images/book-mountains-to-deserts-front.jpg"></a></div>
-                            <div class="col-lg-4 bimg-main"><a href="http://www.willieholdman.com/workshop/"><img class="img-responsive" src="../assets/images/workshop-featured.png"></a></div>
+                            <div style="margin:0 !important;padding:0 !important;" class="col-lg-4 bimg-main"><a href="http://www.willieholdman.com/products/Landscape-Greeting-Cards.asp"><img class="img-responsive bim-l" src="../assets/images/gift-card.png"></a></div>
+                            <div style="margin:0 !important;padding:0 !important;" class="col-lg-4 bimg-main"><a href="http://www.willieholdman.com/products/Landscape-Photography-Books.asp"><img class="img-responsive bim-m" src="../assets/images/book-mountains-to-deserts-front.jpg"></a></div>
+                            <div style="margin:0 !important;padding:0 !important;" class="col-lg-4 bimg-main"><a href="http://www.willieholdman.com/workshop/"><img class="img-responsive bim-r" src="../assets/images/workshop-featured.png"></a></div>
                             </div><div class="clearfix"></div>
                             <div class="col-md-12"><p class="wlcm"><h1 class="wl">Welcome to WillieHoldman.com featuring outdoor nature landscape photography by Photographer Willie Holdman.</h1></p></div>
 						</div>

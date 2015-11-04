@@ -8,8 +8,10 @@
 	<div id="container">
 		{include file='header.tpl'}
 		{include file='header2.tpl'}		
-		<div class="container">					
-			<h1>Newest Media{if $config.settings.rss_newest} <a href="{linkto page='rss.php?mode=newestMedia'}" class="btn btn-xxs btn-warning">{$lang.rss}</a>{/if}</h1>
+		<div class="container">
+
+
+			<h1> <a href="gallery.php?mode=gallery">Galleries</a>  » <a href="{linkto page='gallery.php?mode=gallery&id=2'}" >Newest Images</a></h1>
 			<hr>
 			{if $mediaRows}
 				{include file="paging.tpl" paging=$mediaPaging}

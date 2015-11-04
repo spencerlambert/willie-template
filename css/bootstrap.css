@@ -11,18 +11,18 @@
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #4A4A4A !important;
+    color:   #FFF !important;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #4A4A4A !important;
+   color:    #FFF !important;
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #4A4A4A !important;
+   color:    #FFF !important;
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #4A4A4A !important;
+   color:    #FFF !important;
 }
 
 .responsive-video {
@@ -669,6 +669,15 @@ dd {
 	.gallery-split{
 		display:block !important;
 	}
+	img.img-responsive.bim-l{
+		margin-bottom: 20px !important;
+	}
+	img.img-responsive.bim-m{
+		margin-bottom: 20px !important;
+	}
+	img.img-responsive.bim-r{
+		
+	}
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -1171,6 +1180,15 @@ pre code {
 		.bimg-main{
 	   padding-bottom:20px !important;	
 	}
+	img.img-responsive.bim-l{
+		
+	}
+	img.img-responsive.bim-m{
+		
+	}
+	img.img-responsive.bim-r{
+		
+	}
 		.navbar-form {
   padding: 0px 0px 0px 15px !important;
   margin-top: 8px;
@@ -1381,6 +1399,15 @@ pre code {
 	}
 		.bimg-main{
 	   padding-bottom:0px !important;	
+	}
+	img.img-responsive.bim-l{
+	   margin-left: 89px !important;
+	}
+	img.img-responsive.bim-m{
+	   margin-left: 38px !important;
+	}
+	img.img-responsive.bim-r{
+	   margin-right: 88px !important;
 	}
 	.navbar-form {
   padding: 0px 0px 0px 15px !important;
@@ -1874,7 +1901,7 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.428571429;
-    color: #333333;
+    color: #FFF;
     vertical-align: middle;
     background-color: #1F1F1F;
     border: 1px solid #464646;
@@ -4430,6 +4457,15 @@ textarea.input-group-sm > .input-group-btn > .btn {
 	}
 		.bimg-main{
 	   padding-bottom:0px !important;	
+	}
+	img.img-responsive.bim-l{
+		margin-bottom: 20px !important;
+	}
+	img.img-responsive.bim-m{
+		margin-bottom: 20px !important;
+	}
+	img.img-responsive.bim-r{
+		
 	}
 	
 			.navbar-form {

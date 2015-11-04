@@ -9,18 +9,11 @@
 	<div id="container">
 		{include file='header.tpl'}
 		{include file='header2.tpl'}		
-		<div class="container">					
-			<form action="{linkto page="{$mediaPaging.pageName}&id={$id}&{$mediaPaging.pageVar}=1"}" method="post" id="galleryForm">
-			<input type="hidden" name="postGalleryForm" id="postGalleryForm" value="1">
-		<div class="row">
-        <div class="col-md-7">
-			<h1>{if $contributor.avatar}<a href="{$contributor.linkto}"><img src="{memberAvatar memID=$contributor.mem_id size=40 crop=40 hcrop=40}" class="h1PhotoHeader"></a>{/if} {foreach $crumbs as $key => $crumb}<a href="{$galleriesData.$key.linkto}">{$galleriesData.$key.name}</a> {if !$crumb@last} &raquo; {/if}{/foreach} {if $config.settings.rss_galleries and $currentGallery.gallery_id != 0} <a href="{linkto page="rss.php?mode=gallery&id={$galleryID}"}" class="btn btn-xxs btn-warning">{$lang.rss}</a>{/if}</h1>
-            </div>
-
-
-    {if strpos($smarty.server.REQUEST_URI, "gallery.php") !== false}
+		<div class="container">	
+			
+		{if strpos($smarty.server.REQUEST_URI, "gallery.php") !== false}
 				<div class="nav navbar-right col-md-3">
-					<form role="search" action="{linkto page="search.php"}" method="get" id="searchFormTest" class="navbar-form">			
+					<form role="search" action="search.php" method="get" id="searchFormTest" class="navbar-form">			
 					<input type="hidden" name="clearSearch" value="true">
 						<div class="input-group">					
 							<input type="text" class="form-control" placeholder="{$lang.enterKeywords}" name="searchPhrase" id="searchPhrase">
@@ -40,7 +33,16 @@
 						</div>
 					</form>		
 				</div>		
-	{/if}
+	{/if}				
+			<form action="{linkto page="{$mediaPaging.pageName}&id={$id}&{$mediaPaging.pageVar}=1"}" method="post" id="galleryForm">
+			<input type="hidden" name="postGalleryForm" id="postGalleryForm" value="1">
+		<div class="row">
+        <div class="col-md-7">
+			<h1>{if $contributor.avatar}<a href="{$contributor.linkto}"><img src="{memberAvatar memID=$contributor.mem_id size=40 crop=40 hcrop=40}" class="h1PhotoHeader"></a>{/if} {foreach $crumbs as $key => $crumb}<a href="{$galleriesData.$key.linkto}">{$galleriesData.$key.name}</a> {if !$crumb@last} &raquo; {/if}{/foreach} {if $config.settings.rss_galleries and $currentGallery.gallery_id != 0} <a href="{linkto page="rss.php?mode=gallery&id={$galleryID}"}" class="btn btn-xxs btn-warning">{$lang.rss}</a>{/if}</h1>
+            </div>
+
+
+    
 </div>
 
 			<hr>
