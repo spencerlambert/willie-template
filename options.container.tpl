@@ -3,7 +3,7 @@
 	<div class="divTableCell">
 	{if $optionGroup.ltype == 1}
 		<select id="option{$prefix}-{$key}" name="option{$prefix}[{$key}]" {if $optionGroup.required}require="require"{/if} errorMessage="{$lang.required}" class="form-control">
-			<option value="0" price="0" credits="0"></option>
+			<option value="0" price="0" credits="0">Choose one..</option>
 			{foreach $optionGroup.options as $key2 => $option}	
 				<option 
 					value="{$option.op_id}" 

@@ -1,6 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<style>
+.col-md-3 p{
+	padding-top:0px !important;
+    float:none !important;;
+    text-align: left !important;
+}
+</style>
 	{include file='head.tpl'}
 	<script type="text/javascript" src="{$baseURL}/assets/javascript/media.details.js"></script>
 	{if $config.settings.zoomonoff == 1}
@@ -169,7 +176,7 @@
 							{if $digitalRows}
 								<div class="mediaPurchaseContainers" id="purchaseDigitalDownloads" style="display: block">
 									{foreach $digitalsArray as $digital}
-										<div class="purchaseRow">
+										<div class="col-md-3 purchaseRow">
 											<h2><a href="{$digital.linkto}" class="workboxLink workboxLinkAttach">{$digital.name}</a>{if $digital.dsp_type == 'video' and $digital.hd}<img src="{$imgPath}/hd.png" style="vertical-align:top;">{/if}</h2>
 											<!--{$digital.customizeID} - {$digital.customized}<br>-->
 											{if $config.settings.display_license}<p class="purchaseListDescription">{$lang.license}: <strong>{$digital.licenseLang}</strong> {if $digital.attachlicense > 0}<a href="{$baseURL}/content.php?id={$digital.attachlicense}">{$lang.moreInfoPlus}</a>{/if}</p>{/if}
@@ -194,7 +201,7 @@
 							{if $printRows}
 								<div class="mediaPurchaseContainers" id="purchasePrints">
 									{foreach $prints as $print}
-										<div class="purchaseRow">
+										<div class="col-md-3 purchaseRow">
 											{if $print.photo}<img src="{productShot itemID=$print.print_id itemType=print photoID=$print.photo.id size=125}">{/if}
 											<h2><a href="{$print.linkto}" class="workboxLink workboxLinkAttach">{$print.name}</a></h2>
 											<p class="purchaseListDescription">{$print.description|truncate:200}</p>
@@ -209,7 +216,7 @@
 							{if $productRows}
 								<div class="mediaPurchaseContainers" id="purchaseProducts">						
 									{foreach $products as $product}
-										<div class="purchaseRow">
+										<div class="col-md-3 purchaseRow">
 											{if $product.photo}<img src="{productShot itemID=$product.prod_id itemType=prod photoID=$product.photo.id size=125}">{/if}
 											<h2><a href="{$product.linkto}" class="workboxLink workboxLinkAttach">{$product.name}</a></h2>
 											<p class="purchaseListDescription">{$product.description|truncate:200}</p>
@@ -225,7 +232,7 @@
 								<div class="mediaPurchaseContainers" id="purchaseCollections">						
 									<p class="mpcDescription">{$lang.mediaIncludedInColl}</p>
 									{foreach $collections as $collection}
-										<div class="purchaseRow">
+										<div class="col-md-3 purchaseRow">
 											{if $collection.photo}<img src="{productShot itemID=$collection.coll_id itemType=coll photoID=$collection.photo.id size=125}">{/if}
 											<h2><a href="{$collection.linkto}" class="workboxLink workboxLinkAttach">{$collection.name}</a></h2>
 											<p class="purchaseListDescription">{$collection.description|truncate:200}</p>
@@ -240,7 +247,7 @@
 							{if $packageRows}
 								<div class="mediaPurchaseContainers" id="purchasePackages">
 									{foreach $packages as $package}
-										<div class="purchaseRow">
+										<div class="col-md-3 purchaseRow">
 											{if $package.photo}<img src="{productShot itemID=$package.pack_id itemType=pack photoID=$package.photo.id size=125}">{/if}
 											<h2><a href="{$package.linkto}" class="workboxLink workboxLinkAttach">{$package.name}</a></h2>
 											<p class="purchaseListDescription">{$package.description|truncate:200}</p>

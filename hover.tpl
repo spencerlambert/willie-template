@@ -55,7 +55,7 @@
 		{foreach $media.details as $detail}
 			{if $detail.value != ''}			
 				<li>
-				<span class="mediaDetailLabel mediaDetailLabel{$detail@key}">{$detail.lang}</span>: <span class="mediaDetailValue mediaDetailValue{$detail@key}">
+				<!--<span class="mediaDetailLabel mediaDetailLabel{$detail@key}">{$detail.lang}</span>: --><span class="mediaDetailValue mediaDetailValue{$detail@key}">
 					{if $detail@key == 'owner'}
 						{$detail.value.displayName}
 					{else}				

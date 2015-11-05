@@ -678,6 +678,10 @@ dd {
 	img.img-responsive.bim-r{
 		
 	}
+	.mediaPurchaseContainers .purchaseRow:last-child{
+	border-bottom: 0;
+}
+
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -1189,6 +1193,9 @@ pre code {
 	img.img-responsive.bim-r{
 		
 	}
+		.mediaPurchaseContainers .purchaseRow:last-child{
+	border-bottom: 0;
+}
 		.navbar-form {
   padding: 0px 0px 0px 15px !important;
   margin-top: 8px;
@@ -1409,6 +1416,9 @@ pre code {
 	img.img-responsive.bim-r{
 	   margin-right: 88px !important;
 	}
+		.mediaPurchaseContainers .purchaseRow:last-child{
+	border-bottom: 1px dotted #CCC !important;
+}
 	.navbar-form {
   padding: 0px 0px 0px 15px !important;
   margin-top: 8px;
@@ -4467,7 +4477,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 	img.img-responsive.bim-r{
 		
 	}
-	
+			.mediaPurchaseContainers .purchaseRow:last-child{
+	border-bottom: 0 !important;
+}
 			.navbar-form {
   padding: 0px 15px 0px 15px !important;
   margin-top: 8px;

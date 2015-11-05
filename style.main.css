@@ -303,17 +303,17 @@ p.featuredPrice{
 }
 
 .mediaDetailLabel{
-	color: #666;
+	color: #FCFCFC;
 	font-weight: bold;
 }
 
 
-.mediaDetailsList{
-	font-size: 14px;
-	border: 1px solid #CCC;
-	padding: 20px;	
-	overflow: auto;
-	background-color: #FFF;
+.mediaDetailsList {
+    font-size: 14px;
+    border: 1px solid #424242;
+    padding: 20px;
+    overflow: auto;
+    background-color: #202020;
 }
 
 .mediaDetailsList > li{
@@ -1009,7 +1009,7 @@ footer a:hover{
 /* Workbox */
 #workbox{		
 	z-index: 9999;
-	background-color: #EEE;
+	background-color: #202020;
 	display: none;
 	-moz-box-shadow: 0 0 16px #333; 
 	-webkit-box-shadow: 0 0 16px #333;     
@@ -1036,8 +1036,8 @@ footer a:hover{
 	margin: 0;
 	position: absolute;
 	z-index: 1200;
-	background-color: #FFF;
-	color: #333;
+	background-color: #202020;
+	color: #FFF;
 	overflow: visible;
 	-moz-box-shadow: 0 0 8px #999; 
 	-webkit-box-shadow: 0 0 8px #999;     
@@ -1523,7 +1523,7 @@ h3.productShotsHeader{
 }
 
 .optionsScroller h2{
-	color: #333 !important;	
+	color: #FFF !important;	
 }
 
 .workboxRightColumn .itemTotal{
@@ -2090,13 +2090,14 @@ h3.productShotsHeader{
 }
 
 #mediaPurchaseTabsContainer li.mediaPurchaseTabsSelected{
-	background-color: #EEE;
+	background-color: #202020;
 }
 
 .mediaPurchaseContainers{
-	background-color: #EEE;
+	background-color: #202020;
 	padding: 10px 20px 10px 20px;
 	display: none;
+	min-height: 260px !important;
 	/*
 	-moz-box-shadow: 0px 0px 9px #000; 
 	-webkit-box-shadow: 0px 0px 9px #000;     
@@ -3292,7 +3293,7 @@ input.updateQuantitiesButton[type="button"]{
 		width: 100%;
 		top: 0;
 		min-height: 100px;
-		border: 10px solid #EEE;
+/*	border: 10px solid #EEE; */
 		margin: 0 0 0 0;
 		/*top: 600px;*/
 	}
