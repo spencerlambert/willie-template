@@ -19,7 +19,7 @@
 					<li id="navGalleries"><a href="{linkto page="gallery.php?mode=gallery"}">{$lang.galleries}</a></li>
 					<li id="navAbout"><a href="{linkto page="about.php"}">About</a></li>
 					<li id="navWorkshop"><a href="{linkto page="workshop.php"}">Workshop</a></li>
-					<li id="navWorkshop"><a href="{linkto page="#"}">Product</a></li>
+					<li id="navWorkshop"><a href="{linkto page="gallery.php?mode=gallery&id=15&page=1"}">Product</a></li>
 					{if $config.settings.news}<li id="navNews"><a href="http://www.willieholdman.com/blog/">{$lang.news}</a></li>{/if}
 
 

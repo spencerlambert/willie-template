@@ -26,7 +26,7 @@
 }
 
 .responsive-video {
-	border: 1px solid hsl(0, 0%, 100%);
+	border: 5px solid #1f1f1f;
     margin: 0 auto;
     overflow: hidden;
     padding-bottom: 36.25%;
@@ -703,6 +703,14 @@ dd {
     background-color: #1F1F1F !important;
     padding: 10px 8px 10px 8px !important;
 	border-radius:3px !important;
+}
+	.col-md-6.ws {
+    background-color: #1F1F1F !important;
+    padding: 10px 8px 10px 8px !important;
+	border-radius:3px !important;
+	max-width:435px !important;
+	margin-bottom:10px !important;
+	margin-right:20px !important
 }
 	.hdwr h2{
 		

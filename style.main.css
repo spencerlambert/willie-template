@@ -4,7 +4,16 @@
 }
 
 .col-md-4.img-wsp a .img-responsive{
-  border:1px solid #FFF !important;	
+  border:5px solid #1f1f1f !important;	
+}
+.featuredPageItem{
+  background-color:#1f1f1f !important;
+}
+.med{
+  border:5px solid #1f1f1f !important;
+}
+.ws-main-img{
+  border:2px solid #1f1f1f !important;
 }
 .lb{
 	border-bottom:1px dotted #F00 !important;
@@ -3629,4 +3638,10 @@ input.updateQuantitiesButton[type="button"]{
 .navbar-collapse.color-red.in{
 	height: auto !important;
     overflow-y: hidden !important;
+}
+
+.ws-title{
+	display: table;
+	margin: auto;
+	font-weight: bold;
 }

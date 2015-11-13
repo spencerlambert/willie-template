@@ -17,7 +17,8 @@ http://www.sitepoint.com/understanding-twitter-bootstrap-3/
 		</script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="{$baseURL}/assets/javascript/gallery.js"></script>
+		
+		<script type="text/javascript" src="{$baseURL}/assets/javascript/modal_script.js"></script>
         <script type="text/javascript">
 		  	$(document).ready(function() {
 			    $("#col-cnt").on('shown.bs.collapse', function(){
@@ -68,6 +69,12 @@ http://www.sitepoint.com/understanding-twitter-bootstrap-3/
 				$("#col-cnt8").on('hidden.bs.collapse', function(){
 					$("#col-cnt-btn8").html('See More');
 			    });
+				$("#col-cnt9").on('shown.bs.collapse', function(){
+					$("#col-cnt-btn9").html('Hide this content');
+			    });
+				$("#col-cnt9").on('hidden.bs.collapse', function(){
+					$("#col-cnt-btn9").html('See More');
+			    });
 			});
 		</script>
 	</head>
@@ -113,8 +120,8 @@ http://www.sitepoint.com/understanding-twitter-bootstrap-3/
 				<div class="col-md-12">
 					<div id="homepageJumbotron">
 						<div>
-							<div class="col-md-12 workshop"><img class="img-responsive" src="../assets/images/workshop-featured-photo.png"></div><div class="clearfix"></div>
-                            <div class="col-md-12"><h2 style="text-align:center !important; margin:0 !important; padding-bottom:25px !important;">Limited 8 Day Grand Canyon River Run Workshop</h2></div>
+                            <div class="col-md-12"><h1 style="text-align:center !important; margin:0 !important; padding-bottom:25px !important;">Limited 8 Day Grand Canyon River Run Workshop</h1></div>
+							<div class="col-md-12 workshop"><img class="ws-main-img img-responsive" src="../assets/images/workshop-featured-photo.png"></div><div class="clearfix"></div>
                             <div class="col-md-2"></div> 
                             <div style="margin-bottom:25px !important;" class="col-md-8 responsive-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/O6zzpg2Eu5Q" frameborder="0" allowfullscreen></iframe></div>
                             <div class="col-md-2"></div><div class="clearfix"></div> 
@@ -141,46 +148,46 @@ http://www.sitepoint.com/understanding-twitter-bootstrap-3/
                             <div class="col-lg-12 wsp">
                             <p><h2 class="other-wsp">Other Workshops Available for 2015</h2></p>
                             <p></p><div class="clearfix"></div>
-                            <a href="#">
-                            <div class="col-lg-3 ws">
+                            <!-- <a href="#"> -->
+                            <div class="featuredPageItem galleryFeaturedProducts workboxLinkAttach col-lg-3 col-md-6 ws">
                             <img class="img-wsh"  src="../assets/images/Grand-Canyon-Workshop-Photo.jpg">
-                            <p class="ws-title">Grand Canyon Workshop</p>
+                            <a href="product.php?id=2" class="workboxLink ws-title">Grand Canyon Workshop</a>
                             <p class="ws-price">$200</p>
                             <p class="ws-date">April 11-18, 2016</p>
                             <p class="ws-span">This is the workshop fee only for 2016</p>
                             <p class="ws-avail"><h2 class="ws-spot">1 Spots Available</h2></p>
                             </div>
-                            </a>
-                            <a href="#">
-                            <div class="col-lg-3 ws">
+                            <!-- </a> -->
+                            <!-- <a href="#"> -->
+                            <div class="featuredPageItem galleryFeaturedProducts workboxLinkAttach col-lg-3 col-md-6 ws">
                             <img class="img-wsh" src="../assets/images/Spring-Workshop.jpg">
-                            <p class="ws-title">Grand Canyon Workshop</p>
+                            <a href="product.php?id=3" class="workboxLink ws-title">Grand Canyon Workshop</a>
                             <p class="ws-price">$200</p>
                             <p class="ws-date">April 11-18, 2016</p>
                             <p class="ws-span">This is the workshop fee only for 2016</p>
                             <p class="ws-avail"><h2 class="ws-spot">1 Spots Available</h2></p>
                             </div>
-                            </a>
-                            <a href="#">
-                            <div class="col-lg-3 ws">
+                            <!-- </a>  -->
+                            <!-- <a href="#">   -->
+                            <div class="featuredPageItem galleryFeaturedProducts workboxLinkAttach col-lg-3 col-md-6 ws">
                             <img class="img-wsh" src="../assets/images/Summer-Workshop.jpg">
-                            <p class="ws-title">Grand Canyon Workshop</p>
+                            <a href="product.php?id=4" class="workboxLink ws-title">Grand Canyon Workshop</a>
                             <p class="ws-price">$200</p>
                             <p class="ws-date">April 11-18, 2016</p>
                             <p class="ws-span">This is the workshop fee only for 2016</p>
                             <p class="ws-avail"><h2 class="ws-spot">1 Spots Available</h2></p>
                             </div>
-                            </a>
-                            <a href="#">
-                            <div class="col-lg-3 ws">
+                            <!-- </a>   -->
+                            <!-- <a href="#">   -->
+                            <div class="featuredPageItem galleryFeaturedProducts workboxLinkAttach col-lg-3 col-md-6 ws">
                             <img class="img-wsh" src="../assets/images/Fall-Workshop.jpg">
-                            <p class="ws-title">Grand Canyon Workshop</p>
+                            <a href="product.php?id=5" class="workboxLink ws-title">Grand Canyon Workshop</a>
                             <p class="ws-price">$200</p>
                             <p class="ws-date">April 11-18, 2016</p>
                             <p class="ws-span">This is the workshop fee only for 2016</p>
                             <p class="ws-avail"><h2 class="ws-spot">1 Spots Available</h2></p>
                             </div>
-                            </a>
+                            <!-- </a>   -->
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-md-12" style="margin-top:25px !important;">
@@ -195,7 +202,8 @@ http://www.sitepoint.com/understanding-twitter-bootstrap-3/
                               <div id="col-cnt" class="collapse">
                               <p>We will be doing a fair amount of walking and hiking around and descent conditioning will be a big bonus in your comfort in the field.</p>
                               <p>We will get up early each morning and go to a predetermined spot. These locations will be chosen based on Willie's vast experience and knowledge of the seasons and local weather to allow for the best photography opportunities. Most of the time will be spent capturing Mother Nature in her glory. The main focus of these workshops will be in the field, shooting. The main goal of this workshop is to come away with an image of your own, that you would be proud to hang on your wall. Count on being outside during the optimal light hours of sunrise and sunset. You may be required to bring a sack lunch on certain days but most of the time we should be close enough to eat in one of the local eateries.</p>
-</div><p>In the middle of the day or evenings, after the light is gone, we will spend time on the computer critiquing and going over digital processing and basic techniques to optimize your photographs. More details will be given at the workshop. This workshop is for you. We do not pursue our own photographic endeavors. We concentrate on what's best for the photographers and how we can build upon your existing skills and help you get a great shot.</p>
+                              <p>In the middle of the day or evenings, after the light is gone, we will spend time on the computer critiquing and going over digital processing and basic techniques to optimize your photographs. More details will be given at the workshop. This workshop is for you. We do not pursue our own photographic endeavors. We concentrate on what's best for the photographers and how we can build upon your existing skills and help you get a great shot.</p>
+</div>
                             </div>
                             <div class="col-lg-12">
                              <div><h3>What do the Wasatch Mountains have to offer?</h3><button id="col-cnt-btn2" type="button" class="btn btn-info" data-toggle="collapse" data-target="#col-cnt2">See More</button></div>
@@ -255,8 +263,8 @@ http://www.sitepoint.com/understanding-twitter-bootstrap-3/
                               </div>
                             </div>
                             <div class="col-lg-12">
-                             <div><h3>Do you offer a waiting list?</h3><button id="col-cnt-btn8" type="button" class="btn btn-info" data-toggle="collapse" data-target="#col-cnt8">See More</button></div>
-                              <div id="col-cnt8" class="collapse">
+                             <div><h3>Do you offer a waiting list?</h3><button id="col-cnt-btn9" type="button" class="btn btn-info" data-toggle="collapse" data-target="#col-cnt9">See More</button></div>
+                              <div id="col-cnt9" class="collapse">
                               <p>Waiting list: You may sign up for our waiting list and if we have a cancellation you will be contacted.</p>
                               <p>If you have any questions about the workshops, please don't hesitate to contact Willie Holdman at willie@holdman.com</p>
                               </div>
@@ -271,45 +279,39 @@ http://www.sitepoint.com/understanding-twitter-bootstrap-3/
                             </div>
                             <div class="col-md-12" style="margin-top:35px !important;">
                             <div class="testi">
-                            <p>"Willie, thank you so much for a incredible workshop! This workshop was over the top. It was even better then I imagined, the scenery, the expertise, the weather, the people, everything was perfect! Thank you!"<p><p>All in all, I would highly recommend your workshop to my friends and associates from both coasts looking at a Utah outdoor photo vacation workshop. It was an honor to learn from you."</p>
+                            <p>"Willie, thank you so much for a incredible workshop! This workshop was over the top. It was even better then I imagined, the scenery, the expertise, the weather, the people, everything was perfect! Thank you!"<p>
                             </div>
                             <div class="cust">Bruce O., Ogden, Utah</div>
                             </div>
                             <div class="col-md-12" style="margin-top:35px !important;">
                             <div class="testi">
-                            <p>Number one, the seminar is a 10. Spending time in the field with a Landscape expert like Willie Holdman is an invaluable learning experience. Number two, being in the field, shooting photos with Willie right next to you, helping with composition, camera settings and his ideas on what he would shoot and when, is beyond amazing.<p><p>All in all, I would highly recommend your workshop to my friends and associates from both coasts looking at a Utah outdoor photo vacation workshop. It was an honor to learn from you."</p>
+                            <p>Number one, the seminar is a 10. Spending time in the field with a Landscape expert like Willie Holdman is an invaluable learning experience. Number two, being in the field, shooting photos with Willie right next to you, helping with composition, camera settings and his ideas on what he would shoot and when, is beyond amazing.<p>
                             </div>
                             <div class="cust">Warren D., Charleston, Utah</div>
                             </div>
                             <div class="col-md-12" style="margin-top:35px !important;">
                             <div class="testi">
-                            <p>"I was a bit nervous coming into the workshop because I had no photography background. I left having had a great time with you and the other photographers, and now feel drawn into this world of nature photography. I am indebted to you for that."<p><p>All in all, I would highly recommend your workshop to my friends and associates from both coasts looking at a Utah outdoor photo vacation workshop. It was an honor to learn from you."</p>
+                            <p>"I was a bit nervous coming into the workshop because I had no photography background. I left having had a great time with you and the other photographers, and now feel drawn into this world of nature photography. I am indebted to you for that."<p>
                             </div>
                             <div class="cust">Jay C. Chicago, Illinois</div>
                             </div>
                             <div class="col-md-12" style="margin-top:35px !important;">
                             <div class="testi">
-                            <p>"You were very patient with us .Even answering the same question over and over. On some work shops I've been on the leader was more concerned about getting the shot than helping those who had paid for the class. I felt like I was imposing.Your passion for photography is contagious. Sharing how and what you see was most valuable."<p><p>All in all, I would highly recommend your workshop to my friends and associates from both coasts looking at a Utah outdoor photo vacation workshop. It was an honor to learn from you."</p>
+                            <p>"You were very patient with us .Even answering the same question over and over. On some work shops I've been on the leader was more concerned about getting the shot than helping those who had paid for the class. I felt like I was imposing.Your passion for photography is contagious. Sharing how and what you see was most valuable."<p>
                             </div>
                             <div class="cust">Gus, Provo, Utah</div>
                             </div>   
                             <div class="col-md-12" style="margin-top:35px !important;">
                             <div class="testi">
-                            <p>"I would rate it a 9 out of 10. The in the field part was great and the locations were awesome. The way you explained things was easy for me to follow."<p><p>All in all, I would highly recommend your workshop to my friends and associates from both coasts looking at a Utah outdoor photo vacation workshop. It was an honor to learn from you."</p>
+                            <p>"I would rate it a 9 out of 10. The in the field part was great and the locations were awesome. The way you explained things was easy for me to follow."<p>
                             </div>
                             <div class="cust">Johnny B., Oklahoma</div>
                             </div>
                             <div class="col-md-12" style="margin-top:35px !important;">
                             <div class="testi">
-                            <p>"Thank for providing an excellent workshop. I learned a tremendous amount and the workshop exceeded my expectations."<p><p>All in all, I would highly recommend your workshop to my friends and associates from both coasts looking at a Utah outdoor photo vacation workshop. It was an honor to learn from you."</p>
+                            <p>"Thank for providing an excellent workshop. I learned a tremendous amount and the workshop exceeded my expectations."<p>
                             </div>
                             <div class="cust">Ryan P. Spanish Fork, Utah</div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:35px !important;">
-                            <div class="testi">
-                            <p>"I attended a two day Canon workshop in Portland a few weeks ago that cost $1,000. It was good, but not as good as yours! The Utah landscapes are really breathtaking and you took us to some great spots that I had never seen before.<p><p>All in all, I would highly recommend your workshop to my friends and associates from both coasts looking at a Utah outdoor photo vacation workshop. It was an honor to learn from you."</p>
-                            </div>
-                            <div class="cust">John M. Provo, Utah</div>
                             </div>
 						</div>
 					</div>				

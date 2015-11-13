@@ -20,7 +20,11 @@
 {*<script type="text/javascript" src="{$baseURL}/assets/javascript/jqueryUI/jqueryUI.js"></script>*}
 <script type="text/javascript" src="{$baseURL}/assets/javascript/shared.min.js"></script>
 <script type="text/javascript" src="{$baseURL}/assets/themes/{$theme}/js/theme.js"></script>
-<script type="text/javascript" src="{$baseURL}/assets/javascript/public.min.js"></script>  
+{if strpos($smarty.server.REQUEST_URI, "workshop.php") === false}
+
+	<script type="text/javascript" src="{$baseURL}/assets/javascript/public.min.js"></script>  
+{/if}
+
 <script type="text/javascript" src="{$baseURL}/assets/jwplayer/jwplayer.min.js"></script>
 {*<script type="text/javascript" src="{$baseURL}/assets/javascript/jstree/jquery.jstree.min.js"></script>*}
 
