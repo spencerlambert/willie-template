@@ -27,6 +27,9 @@
 	color:#F00 !important;
 	text-align:right !important;
 }
+.galleryDetailsContainer img {
+	width:100% !important;
+}
 .wsh{
 	padding-bottom:15px !important;
 }
@@ -38,7 +41,6 @@ body {
   background-repeat:no-repeat;
   font-family:Arial, Arial, Helvetica, sans-serif;
 }
-
 ol, ul{
 	list-style: none;
 	margin: 0;
@@ -1187,9 +1189,9 @@ footer a:hover{
 	font-size: 12px;
 }
 
-.galleryFeaturedItemsContainer .description{
+/*.galleryFeaturedItemsContainer .description{
 	font-size: 11px;
-}
+}*/
 
 
 .sortByContainer{
@@ -2508,7 +2510,8 @@ ul.purchaseListDescription li strong{
 }
 
 .cartContainer .row:nth-child(odd){
-	background-color: #efefef;
+	background-color: #1f1f1f;
+	border-radius:5px !important;
 }
 
 .cartThumbColumn{
@@ -2639,17 +2642,16 @@ ul.purchaseListDescription li strong{
 .optionsBox ul.packageOptions{
 	margin-left: 55px;
 	list-style: square;
-	color: #333;
 }
 
 .optionsBox ul{
 	clear: both;
-	color: #333;
+	color: #595959;
 	margin-left: 10px;
 }
 
 .optionsBox ul li span{
-	color: #333;
+	color: #595959;
 }
 
 .optionsBox .divTable .divTableRow .divTableCell:first-child{
@@ -2822,7 +2824,8 @@ ul.purchaseListDescription li strong{
 .cartLoginRequest{
 	margin-top: 3px;
 	padding: 15px;
-	background-color: #EEE;
+	background-color: #1f1f1f;
+	border-radius:5px !important;
 	margin-bottom: 15px;
 	color: #999;
 	text-align: center
@@ -2917,10 +2920,11 @@ input.updateQuantitiesButton[type="button"]{
 }
 
 .promotionsBox p input[type="text"]{
-	background-color: #FFF;
+	background-color: #1f1f1f;
 	color: #333;
 	font-size: 11px;
 	padding: 2px 4px 2px 4px;
+	margin-bottom:8px !important;
 }
 
 .paymentGatewaysBox{
@@ -2944,7 +2948,7 @@ input.updateQuantitiesButton[type="button"]{
 }
 
 .paymentGatewaySelected{
-	background-color: #EEE;
+	background-color: #1f1f1f;
 }
 
 .paymentGatewaysBox ul li img{
@@ -3005,15 +3009,15 @@ input.updateQuantitiesButton[type="button"]{
 	float: left;
 }
 
-.cartReviewAddresses div{
-	background-color: #EEE;
-	height: 160px;
-	padding: 10px 20px 20px 20px
+.cartReviewAddresses div {
+    background-color: #1F1F1F !important;
+    height: 160px;
+    padding: 10px 20px 20px 20px;
 }
 
 .cartReviewAddresses div h1{
 	border-bottom: none;
-	font-size: 14px;
+	font-size: 14px;o
 	margin-bottom: 10px;
 }
 
@@ -3061,13 +3065,13 @@ input.updateQuantitiesButton[type="button"]{
 
 .cartStepsBar li.off{
 	float: left; 
-	background-color: #5d5f61;
+	background-color: #1F1F1F;
 	color: #999
 }
 
 .cartStepsBar li.on{
 	float: left; 
-	background-color: #939598;
+	background-color: #464646;
 	color: #FFF
 }
 
@@ -3089,6 +3093,7 @@ input.updateQuantitiesButton[type="button"]{
 	font-weight: bold;
 	margin-top: 6px;
 	margin-left: 8px;
+	border-radius:5px;
 }
 
 .cartStepsBar li.on p{
@@ -3101,12 +3106,13 @@ input.updateQuantitiesButton[type="button"]{
 
 
 .cartItemDetailsContainer{
-	background-color: #CCC;
+	background-color: #1f1f1f;
 	padding: 6px 6px 6px 8px;
-	color: #555;
-	border-top: 1px solid #FFF;
+	color: #FFF;
+	border: 1px solid #464646;
 	font-size: 11px;
 	text-align: left;
+	border-radius:5px;
 }
 
 .cartItemDetailsContainerInline{

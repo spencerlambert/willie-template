@@ -120,8 +120,8 @@ http://www.sitepoint.com/understanding-twitter-bootstrap-3/
 				<div class="col-md-12">
 					<div id="homepageJumbotron">
 						<div>
-                            <div class="col-md-12"><h1 style="text-align:center !important; margin:0 !important; padding-bottom:25px !important;">Limited 8 Day Grand Canyon River Run Workshop</h1></div>
 							<div class="col-md-12 workshop"><img class="ws-main-img img-responsive" src="../assets/images/workshop-featured-photo.png"></div><div class="clearfix"></div>
+                            <div class="col-md-12"><h1 style="text-align:left !important; margin:0 !important; padding-bottom:25px !important; color:#CCC !important;">Limited 8 Day Grand Canyon River Run Workshop</h1></div><div class="clearfix"></div>
                             <div class="col-md-2"></div> 
                             <div style="margin-bottom:25px !important;" class="col-md-8 responsive-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/O6zzpg2Eu5Q" frameborder="0" allowfullscreen></iframe></div>
                             <div class="col-md-2"></div><div class="clearfix"></div> 
@@ -151,18 +151,15 @@ http://www.sitepoint.com/understanding-twitter-bootstrap-3/
 
                             {if $productRows}
                             	{foreach $productsData1 as $products}
-                            		<a href="gallery.php?mode=gallery&id=16&page=1">
-                            		<div class="featuredPageItem galleryFeaturedProducts col-lg-3 col-md-6 ws">
+                            		<div class="featuredPageItem galleryFeaturedProducts workboxLinkAttach col-lg-3 col-md-6 ws">
 		                            <!--<img class="img-wsh"  src="../assets/images/Grand-Canyon-Workshop-Photo.jpg"> -->
 		                            <img class="img-wsh" src="productshot.php?itemID={$products.prod_id}&amp;itemType=prod&amp;photoID={$products.ip_id}&amp;size=200">
-		                            <p class="workboxLink ws-title">{$products.item_name}</p>
+		                            <a href="product.php?id={$products.item_id}" class="workboxLink ws-title">{$products.item_name}</a>
 		                            <p class="ws-price">${$products.price}</p>
 		                            <p class="ws-date">{$products.description}</p>
 		                            <p class="ws-span">This is the workshop fee only for 2016</p>
 		                            <p class="ws-avail"><h2 class="ws-spot">{$products.quantity} Spots Available</h2></p>
 		                            </div>
-		                          	</a>
-
                             	{/foreach}
                             {/if}
 
