@@ -12,6 +12,9 @@
 .med{
   border:5px solid #1f1f1f !important;
 }
+.featuredPageItem.galleryFeaturedProducts.workboxLinkAttach {
+    min-height: 173px !important;
+}
 .ws-main-img{
   border:2px solid #1f1f1f !important;
 }

@@ -18,7 +18,7 @@
 	{include file='overlays.tpl'}
 	<div id="container">
 		{include file='header.tpl'}
-		<div class="contentContainer">
+		<div class="content container">
 		
 			<ul class="cartStepsBar {if $stepNumber.b}cartStepsBar25{else}cartStepsBar33{/if}">
 				<li class="off"><p>{$stepNumber.a}</p><div>{$lang.cart}</div></li>
