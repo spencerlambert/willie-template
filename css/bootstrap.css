@@ -9,7 +9,19 @@
  */
 
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
-
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:   #FFF !important;
 }
@@ -674,6 +686,13 @@ dd {
 		padding-top:10px;
 		text-align:center;
 	}
+		.col-md-3 p.add{
+		padding-top:10px;
+		text-align:center;
+	}
+	.visit{
+		text-align:center;
+	}
 	.abt-photo{
         margin-top: 10px;	
 	}
@@ -712,6 +731,8 @@ dd {
 	margin-bottom:10px !important;
 	margin-right:20px !important
 }
+  .col-lg-3.gall{
+  }
 	.hdwr h2{
 		
 	}
@@ -1208,6 +1229,13 @@ pre code {
 		padding-top:10px;
 		text-align:center;
 	}
+			.col-md-3 p.add{
+		padding-top:10px;
+		text-align:center;
+	}
+		.visit{
+		text-align:center;
+	}
 		.abt-photo{
         margin-top: 10px;	
 	}
@@ -1248,6 +1276,8 @@ pre code {
 	margin-bottom:15px !important;
 	border-radius:3px !important;
 }
+  .col-lg-3.gall{
+  }
 	img.img-responsive.bim-l{
 		
 	}
@@ -1436,8 +1466,15 @@ pre code {
 @media (min-width: 1200px) {
 		.col-md-3 p{
 		padding-top:27px;
-		float:right;
 		text-align:left !important;
+	}
+		.col-md-3 p.add{
+		padding-top:10px;
+		float:right;
+		text-align:center;
+	}
+		.visit{
+			float:left;
 	}
 		.abt-photo{
 	    float: right;
@@ -1484,6 +1521,9 @@ pre code {
     margin-right: 30px !important;
 	border-radius:3px !important;
 }
+  .col-lg-3.gall{
+	  text-align:right !important;
+  }
 	img.img-responsive.bim-l{
 	   margin-left: 89px !important;
 	}
@@ -4517,6 +4557,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 		padding-top:5px;
 		text-align:center;
 	}
+			.col-md-3 p.add{
+		padding-top:5px;
+		text-align:center;
+	}
+		.visit{
+		text-align:center;
+	}
 		.abt-photo{
         margin-top: 5px;	
 	}
@@ -4557,6 +4604,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 	border-radius:3px !important;
 	margin-bottom:15px !important;
 }
+  .col-lg-3.gall{
+  }
 	img.img-responsive.bim-l{
 		margin-bottom: 20px !important;
 	}

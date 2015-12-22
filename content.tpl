@@ -11,7 +11,7 @@
 		<div class="container">
 			<div class="row">
 				{include file='subnav.tpl'}		
-				<div class="col-md-9">
+				<div class="col-md-12">
 					<h1>{$content.name}</h1>
 						{$content.body}
 				</div>

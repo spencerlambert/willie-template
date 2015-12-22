@@ -158,7 +158,7 @@
 					<h2 style="margin-top: 10px;">{$lang.downloads}</h2>
 					
 					{foreach $digitalInvoiceItems as $invoiceItemKey => $invoiceItem}
-					<div class="row" style="background-color: #efefef; margin-bottom: 3px;">
+					<div class="row" style="background-color: #1F1F1F; margin-bottom: 3px;">
 						<div class="col-md-2 cartThumbColumn">
 							{if $invoiceItem.itemDetails.media}
 								<a href="media.details.php?mediaID={$invoiceItem.itemDetails.media.useMediaID}"><img src="image.php?mediaID={$invoiceItem.itemDetails.media.encryptedID}=&type=icon&folderID={$invoiceItem.itemDetails.media.encryptedFID}==&size=60" class="thumb"></a>
@@ -218,7 +218,7 @@
 				<div class="container cartContainer">
 					<h2 style="margin-top: 10px;">{$lang.items}</h2>					
 					{foreach $physicalInvoiceItems as $invoiceItemKey => $invoiceItem}
-					<div class="row" style="background-color: #efefef; margin-bottom: 3px;">
+					<div class="row" style="background-color: #1F1F1F !important; margin-bottom: 3px;">
 						<div class="col-md-2 cartThumbColumn">
 							{if $invoiceItem.itemDetails.media}
 								<a href="media.details.php?mediaID={$invoiceItem.itemDetails.media.useMediaID}"><img src="image.php?mediaID={$invoiceItem.itemDetails.media.encryptedID}=&type=icon&folderID={$invoiceItem.itemDetails.media.encryptedFID}==&size=60" class="thumb"></a>

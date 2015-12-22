@@ -26,8 +26,12 @@
 			-->
 			<div class="col-md-3"></div>
 			<div class="col-md-6" style="text-align: center;">
+            <div style="text-align:center !important; padding-bottom:15px !important;" class="social">
+                            <a style="padding-right:6px !important;" target="_blank" href="https://www.facebook.com/willieholdmanphotographs"><img src="../assets/images/fb.png"></a>
+                            <a target="_blank" href="https://www.instagram.com/outdoorsykindaguy/"><img src="../assets/images/insta.png"></a>
+                            </div>
 				
-				{if $config.settings.facebook_link}<a href="{$config.settings.facebook_link}" target="_blank"><img src="{$imgPath}/facebook.icon.png" width="20" title="Facebook"></a>{/if}&nbsp;{if $config.settings.twitter_link}<a href="{$config.settings.twitter_link}" target="_blank"><img src="{$imgPath}/twitter.icon.png" width="20" title="Twitter"></a>{/if}
+				<!--{if $config.settings.facebook_link}<a href="{$config.settings.facebook_link}" target="_blank"><img src="{$imgPath}/facebook.icon.png" width="20" title="Facebook"></a>{/if}-->&nbsp;{if $config.settings.twitter_link}<a href="{$config.settings.twitter_link}" target="_blank"><img src="{$imgPath}/twitter.icon.png" width="20" title="Twitter"></a>{/if}
 				{if $config.settings.contact}<a href="{linkto page="contact.php"}"> Contact Info |</a>{/if}
 				<span style="color:white;"> All Rights Reserved &copy; |</span>
 			<!--

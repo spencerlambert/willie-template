@@ -15,12 +15,12 @@
 		<div class="container col-md-8 col-md-offset-2">
 			<div class="collapse navbar-collapse color-red">
 				<ul class="nav navbar-nav topNav">
-
+                    <li id="navHome"><a href="{linkto page="index.php"}">Home</a></li>
 					<li id="navGalleries"><a href="{linkto page="gallery.php?mode=gallery"}">{$lang.galleries}</a></li>
 					<li id="navAbout"><a href="{linkto page="about.php"}">About</a></li>
 					<li id="navWorkshop"><a href="{linkto page="workshop.php"}">Workshop</a></li>
 					<li id="navWorkshop"><a href="{linkto page="gallery.php?mode=gallery&id=15&page=1"}">Product</a></li>
-					{if $config.settings.news}<li id="navNews"><a href="http://www.willieholdman.com/blog/">{$lang.news}</a></li>{/if}
+					{if $config.settings.news}{/if}
 
 
 					{* Login Status & Name *}

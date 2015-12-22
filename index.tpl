@@ -1,4 +1,4 @@
-<!-- 
+ <!-- 
 Based on this tutorial
 http://www.sitepoint.com/understanding-twitter-bootstrap-3/
 -->
@@ -24,7 +24,7 @@ http://www.sitepoint.com/understanding-twitter-bootstrap-3/
 		{if $config.settings.hpfeaturedmedia and $featuredMedia}
 		<!-- Carousel
 		================================================== -->
-		<div id="myCarousel" class="carousel slide">
+		<div style="margin-top:22px !important;" id="myCarousel" class="carousel slide">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
 				{foreach $featuredMedia as $media}
@@ -34,12 +34,9 @@ http://www.sitepoint.com/understanding-twitter-bootstrap-3/
 			<div class="carousel-inner">
 				{foreach $featuredMedia as $media}
 				<div class="item {if $media@first}active{/if}">
-					<img src="image.php?mediaID={$media.encryptedID}=&type=featured&folderID={$media.encryptedFID}&size={$config.settings.hpf_width}&crop={$config.settings.hpf_crop_to}" encMediaID="{$media.encryptedID}" href="{$media.linkto}" alt="{$media.title.value}">
+					<a href="{$media.linkto}"><img style="width:100%;" src="image.php?mediaID={$media.encryptedID}=&type=featured&folderID={$media.encryptedFID}&size={$config.settings.hpf_width}&crop={$config.settings.hpf_crop_to}" encMediaID="{$media.encryptedID}" href="{$media.linkto}" alt="{$media.title.value}"></a>
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>{$media.title.value}</h1>
-							<p class="hidden-xs">{$media.description.value}</p>
-							<p><a class="btn btn-large btn-primary" href="{$media.linkto}">{$lang.details}</a></p>
 						</div>
 					</div>
 				</div>
@@ -59,18 +56,8 @@ http://www.sitepoint.com/understanding-twitter-bootstrap-3/
 				<div class="col-md-12">
 					<div id="homepageJumbotron">
 						<div>
-							<div class="col-md-12 gallery"><a href="http://www.willieholdman.com/products/Utah-landscape-park-city-photo-gallery.asp"><img class="img-responsive" src="../assets/images/gallery.jpg"></a></div>
-                            <div class="col-md-12 gallery-split"><a href="http://www.willieholdman.com/products/Utah-landscape-park-city-photo-gallery.asp"><img class="img-responsive" src="../assets/images/gallery-split-1.jpg"></a></div>
-                            <div class="col-md-12 gallery-split"><a href="http://www.willieholdman.com/products/Utah-landscape-park-city-photo-gallery.asp"><img class="img-responsive" src="../assets/images/gallery-split-2.jpg"></a></div>
-                            <div class="clearfix"></div>
-                            <div class="bimgs">
-                            <div style="margin:0 !important;padding:0 !important;" class="col-lg-4 bimg-main"><a href="http://www.willieholdman.com/products/Landscape-Greeting-Cards.asp"><img class="img-responsive bim-l" src="../assets/images/gift-card.png"></a></div>
-                            <div style="margin:0 !important;padding:0 !important;" class="col-lg-4 bimg-main"><a href="http://www.willieholdman.com/products/Landscape-Photography-Books.asp"><img class="img-responsive bim-m" src="../assets/images/book-mountains-to-deserts-front.jpg"></a></div>
-                            <div style="margin:0 !important;padding:0 !important;" class="col-lg-4 bimg-main"><a href="http://www.willieholdman.com/workshop/"><img class="img-responsive bim-r" src="../assets/images/workshop-featured.png"></a></div>
-                            </div><div class="clearfix"></div>
-                            <div class="col-md-12"><p class="wlcm"><h1 class="wl">Welcome to WillieHoldman.com featuring outdoor nature landscape photography by Photographer Willie Holdman.</h1></p></div>
-						</div>
-					</div>				
+							<h1 style="text-align:center;padding-top:20px;"><a href="../Utah-landscape-park-city-photo-gallery.php">Visit us at our Park City Gallery</a></h1>
+					    </div>				
 					
 					{* Featured Galleries Area *}
 					{if $subGalleriesData}

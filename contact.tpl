@@ -3,6 +3,7 @@
 <head>
 	{include file='head.tpl'}
 	<script type="text/javascript" src="{$baseURL}/assets/javascript/featured.page.js"></script>
+	<script type="text/javascript" src="{$baseURL}/assets/javascript/mailchimp.subscribe.js"></script>
 </head>
 <body>
 	{include file='overlays.tpl'}
@@ -56,7 +57,8 @@
 										</div>
 									</div>
 									</form>
-								{/if}								
+								{/if}
+																
 							</div>
 							<div class="col-md-3">
 								<p>
@@ -65,7 +67,25 @@
 									{if $config.settings.business_address2}{$config.settings.business_address2}<br>{/if}
 									{$config.settings.business_city}, {$config.settings.business_state} {$config.settings.business_zip}<br>
 									{$config.settings.business_country}
-								</p>
+								</p><div class="clearfix"></div>
+                                <h2 class="visit"><a href="../Utah-landscape-park-city-photo-gallery.php">Visit us at our Park City Gallery</a></h2>
+							</div>
+							<div class="clearfix"></div>
+                <h2 class="visit">Subscribe to Updates and information from Willie Holdman Landscape Photographs</h2><br>
+              <div class="clearfix"></div>
+							<div id="mailchimpDiv">
+							<form id="mailchimpForm" class="cleanForm form-group" method="post">
+									<div class="divTable" style="width: 70%;">
+										<div class="divTableRow">
+											<div class="divTableCell formFieldLabel">Email:</div>
+											<div class="divTableCell"><input type="text" id="mailchimp_subscribe" name="mailchimp_email" value="{$mailchimp.email}" class="form-control"></div>
+											<div class="divTableCell"></div>
+											<div class="divTableCell"><input type="button" id="mailchimp_subscribe_button" value="Subscribe" class="btn btn-sm btn-primary"></div>
+											<div id="alert_placeholder"></div>
+										</div>
+										</div>
+									</div>
+							</form>
 							</div>
 						</div>
 					</div>					

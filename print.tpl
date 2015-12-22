@@ -61,14 +61,19 @@
 						</div>
 						<hr>
 					{/if}
-				</div>				
-			</div>
-		</div>
-	</div>
-	<div class="workboxActionButtons">
+				</div>	
+                <div class="workboxActionButtons">
 		{if $print.price}{$lang.mediaLabelPrice}: <span class="price" id="workboxItemPrice">{$print.price.display}</span>{if $print.price.taxInc} <span class="taxIncMessage">({$lang.taxIncMessage})</span>{/if}{/if}
 		{if $print.credits}&nbsp;&nbsp;{$lang.mediaLabelCredits}: <span class="price" id="workboxItemCredits">{$print.credits}</span>{/if}
 		{if $cartStatus}{if $media}<br><input type="button" value="{if $edit}{$lang.update}{else}{$lang.addToCart}{/if}" id="workboxAddToCart" class="btn btn-xs btn-primary">{else}<br><p class="noItemCartWarning"><img src="{$imgPath}/notice.icon.png">{$lang.noItemCartWarning}<br><input type="button" value="{$lang.addToCart}" disabled="disabled" class="btn btn-xs btn-primary"></p>{/if}{/if}
+	</div>			
+			</div><div class="clearfix"></div>
+            <div class="col-md-9">
+            <p style="font-size:16px;font-weight:bold;"><a href="../prints-and-framing.php">Framing Option Details</a></p>
+            <img class="img-responsive" src="../assets/images/frames.jpg"/>
+            </div><div class="clearfix"></div>
+		</div>
 	</div>
+	
 {/if}
 </form>

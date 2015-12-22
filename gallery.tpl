@@ -82,7 +82,7 @@
 					{foreach $prints as $print}
 						<div class="featuredPageItem galleryFeaturedPrints workboxLinkAttach">
 							<h2><a href="{$print.linkto}" class="workboxLink">{$print.name}</a></h2>
-							<p class="description">{if $print.photo}<img src="{productShot itemID=$print.print_id itemType=print photoID=$print.photo.id size=70}">{/if}{$print.description|truncate:360}</p>
+							<p class="description">{if $print.photo}<img src="{productShot itemID=$print.print_id itemType=print photoID=$print.photo.id size=190}">{/if}{$print.description|truncate:360}</p>
 							<p class="moreInfo">{if $print.price}<span class="price">{$print.price.display}</span>{/if}{if $config.settings.cart == 3} {$lang.priceCreditSep} {/if}{if $print.credits}<span class="price">{$print.credits} <sup>{$lang.mediaLabelCredits}</sup></span>{/if}</p>
 						</div>
 					{/foreach}
@@ -95,7 +95,7 @@
 					{foreach $products as $product}
 						<div class="featuredPageItem galleryFeaturedProducts workboxLinkAttach">
 							<h2><a href="{$product.linkto}" class="workboxLink">{$product.name}</a></h2>
-							<p class="description">{if $product.photo}<img src="{productShot itemID=$product.prod_id itemType=prod photoID=$product.photo.id size=70}">{/if}{$product.description|truncate:360}</p>
+							<p class="description">{if $product.photo}<img src="{productShot itemID=$product.prod_id itemType=prod photoID=$product.photo.id size=190}">{/if}{$product.description|truncate:360}</p>
 							<p class="moreInfo">{if $product.price}<span class="price">{$product.price.display}</span>{/if}{if $config.settings.cart == 3} {$lang.priceCreditSep} {/if}{if $product.credits}<span class="price">{$product.credits} <sup>{$lang.mediaLabelCredits}</sup></span>{/if}</p>
 						</div>
 					{/foreach}
@@ -151,7 +151,7 @@
 			{/if}
 			
 			{if $currentGallery.gallery_id != 0}
-				{if !$subGalleriesData and !$mediaRows}<br><p class="notice">{$lang.noMedia}</p>{/if}
+				{if !$subGalleriesData and !$mediaRows and !$isProductGallery}<br><p class="notice">{$lang.noMedia}</p>{/if}
 			{/if}
 			
 			</form>
