@@ -76,7 +76,7 @@
 							<h2 style="margin-top: 0;">{$lang.searchHeaderKeywords}</h2>
 							<div style="position: relative">
 								<input type="text" name="searchPhrase" id="searchPhrase2" value="{*$lang.enterKeywords*}" class="searchInputBox form-control">									
-								<p class="searchMatchTerms"><label for="exactMatch">{$lang.exactMatch}</label> <input type="checkbox" name="exactMatch" value="1" id="exactMatch"></p>
+								<p style="padding-top:0px !important;" class="searchMatchTerms"><label class="exm" for="exactMatch">{$lang.exactMatch}</label> <input type="checkbox" name="exactMatch" value="1" id="exactMatch"></p>
 							</div>
 						
 							{if $config.settings.search_fields}
